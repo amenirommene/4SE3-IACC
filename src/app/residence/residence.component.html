@@ -1,0 +1,24 @@
+<title>test</title>
+<p>residence works!</p>
+<button>test residence</button>
+<app-test></app-test>
+
+<input [value]="title">
+<ul>
+  <li *ngFor="let r of listResidences">
+{{r.name }} - {{r.address}}
+<button (click)="getApartments(r)">Show Apartments</button>
+<a [routerLink]="['details',r.id, r.name]">details</a><br>
+<ul>
+  <div *ngFor="let a of listApart">
+  <li *ngIf="r.id == a.residence.id">
+    {{a.id}} - {{a.appartNum}}
+  </li>
+</div>
+</ul>
+ <!---<img [src]="r.image" />--->
+  </li>
+
+</ul>
+
+<router-outlet></router-outlet>
