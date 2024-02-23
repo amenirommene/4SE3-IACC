@@ -1,3 +1,4 @@
+import { ResidenceService } from './../residence.service';
 import { TestComponent } from './../test/test.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,6 +15,8 @@ import { UserComponent } from './user/user.component';
   imports: [
     CommonModule,
     UserRoutingModule
-  ]
+  ],
+  //scope du service : les composants de ce module
+ // providers : [ResidenceService]
 })
 export class UserModule { }

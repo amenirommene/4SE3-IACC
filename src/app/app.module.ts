@@ -8,7 +8,7 @@ import { ResidenceComponent } from './residence/residence.component';
 import { TestComponent } from './test/test.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DetailsComponent } from './details/details.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { DetailsComponent } from './details/details.component';
   imports: [
     BrowserModule,
     FormsModule, //ngModel
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
