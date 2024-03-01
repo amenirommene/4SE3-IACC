@@ -4,6 +4,7 @@ import { ResidenceComponent } from './residence/residence.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DetailsComponent } from './details/details.component';
+import { AddResidenceComponent } from './add-residence/add-residence.component';
 
 const routes: Routes = [
 
@@ -14,8 +15,10 @@ const routes: Routes = [
 ]},
 {path:"test", component:TestComponent},
 
+{path:"add", component:AddResidenceComponent},
 //"**" à placer dans la dernière position
-{path:"**", component:NotFoundComponent}
+{path:"**", component:NotFoundComponent},
+
 
 ];
 

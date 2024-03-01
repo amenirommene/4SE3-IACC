@@ -5,6 +5,38 @@
       "name": "El Anber",
       "address": "Manzah 5",
       "image": "../../assets/images/R4.jpg"
+    },
+    {
+      "name": "azertyuiop",
+      "image": "sdfghjkilom",
+      "adress": "zertyuiop",
+      "id": 5
+    },
+    {
+      "name": "sdfghjklm",
+      "image": "dfghjkl",
+      "adress": "sdfghjk",
+      "id": 6
+    },
+    {
+      "name": "xcfvgbhnj,k",
+      "image": "xcvbhnj,k",
+      "adress": "sdfghjkl",
+      "id": 7
+    },
+    {
+      "groupe1": {
+        "name": "dfghjklm",
+        "adress": "cdffb hh"
+      },
+      "image": "jjjj",
+      "id": 8
+    },
+    {
+      "address": "cvbn,;:",
+      "image": "dfghjkl",
+      "name": "dfghjklm",
+      "id": 9
     }
   ],
   "apartments": [
@@ -17,7 +49,7 @@
       "surfaceTerrace": 20,
       "category": "S+1",
       "description": "Appartement S+1",
-      "residence":{
+      "residence": {
         "id": 4,
         "name": "El Anber",
         "address": "Manzah 5",

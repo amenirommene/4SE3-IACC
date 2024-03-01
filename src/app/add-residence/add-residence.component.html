@@ -1,0 +1,35 @@
+<form [formGroup]="myForm">
+<table>
+  <div formGroupName="groupe1">
+  <tr>
+    <td>Name: {{name.touched}}</td>
+    <td><input type="text"  formControlName="name">
+            <div *ngIf="name.touched && name.invalid">
+        Name obligatoire
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>Adresse:{{adress.dirty}} </td>
+    <td><input type="text" formControlName="adress">
+      <div *ngIf="adress.errors">
+        <div *ngIf="adress.errors['required']">adress obligatoire</div>
+        <div *ngIf="adress.errors['minlength']">minimum
+          {{ adress.errors['minlength']['requiredLength']}} carcatères
+          alors que vouas avez tapé {{ adress.errors['minlength']['actualLength']}} </div>
+      </div>
+    </td>
+  </tr>
+  </div>
+  <div>
+  <tr *ngIf="groupe1.valid">
+    <td>Image</td>
+    <td><input type="text" formControlName="image"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><button (click)="add()" [disabled]="myForm.invalid">Ajouter</button></td>
+  </tr>
+  </div>
+</table>
+  </form>
